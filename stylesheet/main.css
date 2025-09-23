@@ -1,14 +1,52 @@
-/* Timeline vertical moderna */
+.linha-branca .timeline-bulletano {
+    background: #fff;
+}
+.linha-vermelha .timeline-bulletano {
+    background: #ed3b48;
+}
+.linha-branca .timeline-bullet {
+    background: #fff;
+}
+.linha-vermelha .timeline-bullet {
+    background: #ed3b48;
+}
+.linha-branca.timeline::before {
+    background: #fff;
+}
+.linha-vermelha.timeline::before {
+    background: #ed3b48;
+}
+#abertura + .timeline::before {
+    background: #fff;
+}
+.timeline-ano + .timeline::before,
+.timeline-event + .timeline::before {
+    background: #ed3b48;
+}
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+	background-color: #ed3b48;
+}
+
+.timeline-content {
+    position: relative;
+    left: 2em;
+}
+
+/* Timeline vertical */
 .timeline-container {
     position: relative;
     width: 100%;
-    padding-left: 60px;
+    /* padding-left: 60px; */
+	background-color: #ed3b48;
 }
  
 .timeline {
     position: relative;
     margin: 0;
     padding: 0;
+	
 }
  
 .timeline::before {
@@ -18,7 +56,7 @@
     top: 0;
     width: 4px;
     height: 100%;
-    background: #ed3b48;
+    
     z-index: 1;
 }
  
@@ -26,13 +64,13 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 2em;
+    
 }
  
  
 .timeline-bulletano {
     position: absolute;
-    left: 22px;
+    left: 23px;
     width: 18px;
     height: 18px;
     background: black;
@@ -42,12 +80,14 @@
  
 .timeline-bullet {
     position: absolute;
-    left: 26px;
+    left: 27px;
+    top:  0;
     width: 10px;
     height: 10px;
     background: black;
     border-radius: 50%;
     z-index: 2;
+	margin-top: 15px;
 }
  
 .timeline-content {
@@ -76,7 +116,26 @@
 
  
  
- 
+ /* icone */
+
+ .icone-wrapper {
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 5em;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icone {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    
+}
  
  
 /* class */
@@ -90,7 +149,6 @@
 }
  
 .fonteBranco{
- 
     color: #fff;
 }
  
@@ -145,10 +203,7 @@ mark{
     text-decoration: none;
 }
  
-.caixatexto p{
-    color: #fff;
-   
-}
+
  
 .imga{
     width: .8em;
@@ -274,9 +329,7 @@ a:active {
 .caixatexto{
     border-radius: 20px;
     margin: 1%;
-    border: 1px solid #a0a09b;
     padding: 40px;
-    background-color: #ed3b48;
     width: 55%;
  
 }
@@ -286,7 +339,7 @@ a:active {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
     padding: .6em 0 1em 0;
-    color: #fff ;
+    
 }
  
 .icone{
