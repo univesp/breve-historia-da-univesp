@@ -1,3 +1,80 @@
+/* Timeline vertical moderna */
+.timeline-container {
+	position: relative;
+	width: 100%;
+	padding-left: 60px;
+}
+
+.timeline {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.timeline::before {
+	content: "";
+	position: absolute;
+	left: 30px;
+	top: 0;
+	width: 4px;
+	height: 100%;
+	background: #1ea0aa;
+	z-index: 1;
+}
+
+.timeline-year, .timeline-event {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-bottom: 2em;
+}
+
+.timeline-bulletano {
+	position: absolute;
+	left: 22px;
+	width: 18px;
+	height: 18px;
+	background: black;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+.timeline-bullet {
+	position: absolute;
+	left: 26px;
+	width: 10px;
+	height: 10px;
+	background: black;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+.timeline-content {
+	margin-left: 60px;
+}
+
+@media screen and (max-width: 600px) {
+	.timeline-container {
+		padding-left: 30px;
+	}
+	.timeline-content {
+		margin-left: 40px;
+	}
+	.timeline::before {
+		left: 15px;
+		width: 3px;
+	}
+	.timeline-bulletano {
+		left: 7px;
+		width: 14px;
+		height: 14px;
+	}
+	.timeline-bullet {
+		left: 11px;
+		width: 7px;
+		height: 7px;
+	}
+}
 /*<link href="https://fonts.googleapis.com/css?family=Barlow|Open+Sans" rel="stylesheet">*/
 
 
@@ -104,10 +181,13 @@ a:active {
 /*OUTROS ELEMENTOS*/
 
 #abertura{
-	margin: 2em;
-	padding-bottom: 2em;
 	margin-bottom: 3em;
 	border-bottom: 2px solid black;
+	padding-bottom: 2em;
+}
+
+.vermelho{
+	background-color: red;
 }
 
 #timeline{
@@ -127,6 +207,18 @@ a:active {
 	z-index: 1;
 }
 
+#timeline::after{
+	content: "";
+	position: absolute;
+	left: calc(20% + 3% - 7.5px);
+	top: 0;
+	width: 18px;
+	height: 18px;
+	background-color: black;
+	border-radius: 50%;
+	z-index: 3;
+}
+
 
 /*datas*/
 
@@ -139,7 +231,9 @@ a:active {
 
 .divbullet{
 	width: 6%;
+	display: flex;
 	align-items: center;
+	justify-content: center;
 	padding-top: 0.8em;
 	position: relative;
 	z-index: 2;
@@ -207,6 +301,12 @@ body{
 		width: 4px;
 	}
 	
+	#timeline::after{
+		left: calc(20% + 3% - 9px);
+		width: 18px;
+		height: 18px;
+	}
+	
 	.bulletano{
 		height: 18px;
 		width: 18px;
@@ -218,7 +318,7 @@ body{
 	}
 	
 	#abertura p,h1{
-		text-align: center;
+		text-align: left;
 	}
 }
 
