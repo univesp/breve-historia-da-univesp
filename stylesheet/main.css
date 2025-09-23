@@ -18,7 +18,7 @@
     top: 0;
     width: 4px;
     height: 100%;
-    background: #a80505;
+    background: #ed3b48;
     z-index: 1;
 }
  
@@ -54,29 +54,26 @@
     margin-left: 60px;
 }
  
-@media screen and (max-width: 600px) {
-    .timeline-container {
-        padding-left: 30px;
-    }
-    .timeline-content {
-        margin-left: 40px;
-    }
-    .timeline::before {
-        left: 15px;
-        width: 3px;
-    }
-    .timeline-bulletano {
-        left: 7px;
-        width: 14px;
-        height: 14px;
-    }
-    .timeline-bullet {
-        left: 11px;
-        width: 7px;
-        height: 7px;
-    }
+#timeline{
+    position: relative;
+    padding-bottom: 3em;
+    margin-bottom: 0;
 }
-/*<link href="https://fonts.googleapis.com/css?family=Barlow|Open+Sans" rel="stylesheet">*/
+ 
+
+ 
+#timeline::after{
+    content: "";
+    position: absolute;
+    left: calc(20% + 3% - 7.5px);
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 3;
+}
+
  
  
  
@@ -84,6 +81,13 @@
  
 /* class */
  
+.branco{
+	background-color: #fff;
+}
+
+.vermelho{
+    background-color: #ed3b48;
+}
  
 .fonteBranco{
  
@@ -92,7 +96,7 @@
  
 .fonteVermelha{
  
-    color: red;
+    color: #ed3b48;
 }
 /*Alterações de fonte*/
  
@@ -126,7 +130,7 @@ p{
  
 mark{
     background-color: #f8f8f8;
-    color: rgb(192, 37, 37);
+    color: #ed3b48;
     font-weight: bold;
     padding: 2px ;
     padding-left: 10px;
@@ -210,11 +214,9 @@ a:active {
   margin-left: 3%;
   padding: 1em;
   margin-bottom: 1em;
-  border-bottom: 1px solid black;
-  background-color: hsl(0, 96%, 40%);
+  background-color: #ed3b48;
   color: #fff;
   border-radius: 6px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
  
 }
  
@@ -223,38 +225,8 @@ a:active {
   margin-bottom: 2%;
   font-weight:normal;
 }
-.vermelho{
-    background-color: red;
-}
+
  
-#timeline{
-    position: relative;
-    padding-bottom: 3em;
-    margin-bottom: 0;
-}
- 
-#timeline::before{
-    content: "";
-    position: absolute;
-    left: calc(20% + 3%);
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background-color: #aa1e1e;
-    z-index: 1;
-}
- 
-#timeline::after{
-    content: "";
-    position: absolute;
-    left: calc(20% + 3% - 7.5px);
-    top: 0;
-    width: 18px;
-    height: 18px;
-    background-color: black;
-    border-radius: 50%;
-    z-index: 3;
-}
  
  
 /*datas*/
@@ -304,7 +276,7 @@ a:active {
     margin: 1%;
     border: 1px solid #a0a09b;
     padding: 40px;
-    background-color: red;
+    background-color: #ed3b48;
     width: 55%;
  
 }
@@ -359,5 +331,27 @@ body{
    
     #abertura p,h1{
         text-align: left;
+    }
+}
+@media screen and (max-width: 600px) {
+    .timeline-container {
+        padding-left: 30px;
+    }
+    .timeline-content {
+        margin-left: 40px;
+    }
+    .timeline::before {
+        left: 15px;
+        width: 3px;
+    }
+    .timeline-bulletano {
+        left: 7px;
+        width: 14px;
+        height: 14px;
+    }
+    .timeline-bullet {
+        left: 11px;
+        width: 7px;
+        height: 7px;
     }
 }
