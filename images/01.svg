@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60.9 60.9" style="enable-background:new 0 0 60.9 60.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#1D1D1B;stroke-width:0.851;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:0.8504;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#68B2BB;stroke:#000000;stroke-width:0.8504;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;stroke:#000000;stroke-width:0.8504;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M30.5,60.9C47.3,60.9,61,47.3,61,30.4C60.9,13.6,47.3,0,30.5,0S0,13.6,0,30.5C0,47.3,13.6,60.9,30.5,60.9"/>
+<circle class="st1" cx="30.5" cy="30.5" r="26.9"/>
+<g>
+	<path class="st2" d="M22.1,11.2C22.1,11.2,22.1,11.2,22.1,11.2C22.2,11.2,22.2,11.2,22.1,11.2L22.1,11.2z M22.2,11.2
+		c-1,0-1.8,0.8-1.8,1.8v33.1h3.6V13C23.9,12,23.1,11.2,22.2,11.2z"/>
+	<path class="st2" d="M23.9,15.5v30.6h-3.6V13c0-1,0.8-1.8,1.8-1.8l0,0c0.6,0,1.1,0.3,1.4,0.7"/>
+	<line class="st2" x1="14" y1="46.1" x2="37.5" y2="46.1"/>
+	<path class="st3" d="M45.6,27.3c0,0,3.7-4.5,4.7-7.5c-4.8,1.4-14.6,0.8-15.7,0c0,1,0,5,0,5v5c0,0,0,2.6,0,3.6
+		c1.8,2.6,13.2,1.5,17.1-0.7C48.7,30.4,45.6,27.3,45.6,27.3z"/>
+	<path class="st3" d="M34.6,29.7c0,0,0,2.6,0,3.6c1.8,2.6,13.2,1.5,17.1-0.7c-3-2.2-6.2-5.3-6.2-5.3s3.7-4.5,4.7-7.5
+		c-4.8,1.4-14.6,0.8-15.7,0c0,1,0,5,0,5"/>
+	<polygon class="st3" points="38.2,16.9 34.6,19.1 34.6,29.7 34.6,32.6 35.3,33.3 38.9,29.7 38.9,29 38.9,18.3 	"/>
+	<polyline class="st3" points="34.6,19.1 38.2,16.9 38.9,18.3 38.9,29 38.9,29.7 35.3,33.3 34.6,32.6 34.6,28 	"/>
+	<path class="st3" d="M38.9,15.6c-3.5-2.7-15.7-2.9-18.5-0.1c0,3.4,0,9.6,0,13.5c3.9-1.7,12.3-2.3,17.7,0h0.8
+		C38.9,29,38.9,19.3,38.9,15.6z"/>
+	<path class="st4" d="M26.8,46.1h-9.3v-1.6c0-1.1,0.9-2,2-2h5.3c1.1,0,2,0.9,2,2V46.1z"/>
+</g>
+</svg>
