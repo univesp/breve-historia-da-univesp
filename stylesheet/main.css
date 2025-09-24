@@ -1,54 +1,47 @@
-.linha-branca .timeline-bulletano {
-    background: #fff;
-}
-.linha-vermelha .timeline-bulletano {
-    background: #ed3b48;
-}
-.linha-branca .timeline-bullet {
-    background: #fff;
-}
-.linha-vermelha .timeline-bullet {
-    background: #ed3b48;
-}
-.linha-branca.timeline::before {
-    background: #fff;
-}
-.linha-vermelha.timeline::before {
-    background: #ed3b48;
-}
-#abertura + .timeline::before {
-    background: #fff;
-}
+/* ================== BULLETS E LINHAS ================== */
+.linha-branca .timeline-bulletano { background: #fff; }
+
+.linha-vermelha .timeline-bulletano { background: #ed3b48; }
+
+.linha-branca .timeline-bullet { background: #fff; }
+
+.linha-vermelha .timeline-bullet { background: #ed3b48; }
+
+.linha-branca.timeline::before { background: #fff; }
+
+.linha-vermelha.timeline::before { background: #ed3b48; }
+
+#abertura + .timeline::before { background: #fff; }
+
 .timeline-ano + .timeline::before,
-.timeline-event + .timeline::before {
-    background: #ed3b48;
-}
+.timeline-event + .timeline::before { background: #ed3b48; }
+
 html, body {
     max-width: 100vw;
     overflow-x: hidden;
 	background-color: #ed3b48;
 }
 
+/* 🔹 ALTERADO: afastar o texto do ícone */
 .timeline-content {
+    margin-left: 120px; /* antes era 60px */
     position: relative;
-    left: 2em;
+    left: 0;
 }
 
 /* Timeline vertical */
 .timeline-container {
     position: relative;
     width: 100%;
-    /* padding-left: 60px; */
 	background-color: #ed3b48;
 }
- 
+
 .timeline {
     position: relative;
     margin: 0;
     padding: 0;
-	
 }
- 
+
 .timeline::before {
     content: "";
     position: absolute;
@@ -56,18 +49,15 @@ html, body {
     top: 0;
     width: 4px;
     height: 100%;
-    
     z-index: 1;
 }
- 
+
 .timeline-ano, .timeline-event {
     position: relative;
     display: flex;
     align-items: center;
-    
 }
- 
- 
+
 .timeline-bulletano {
     position: absolute;
     left: 23px;
@@ -76,8 +66,9 @@ html, body {
     background: black;
     border-radius: 50%;
     z-index: 2;
+    margin-top: 30px;
 }
- 
+
 .timeline-bullet {
     position: absolute;
     left: 27px;
@@ -89,19 +80,13 @@ html, body {
     z-index: 2;
 	margin-top: 15px;
 }
- 
-.timeline-content {
-    margin-left: 60px;
-}
- 
+
 #timeline{
     position: relative;
     padding-bottom: 3em;
     margin-bottom: 0;
 }
- 
 
- 
 #timeline::after{
     content: "";
     position: absolute;
@@ -114,13 +99,10 @@ html, body {
     z-index: 3;
 }
 
- 
- 
- /* icone */
-
- .icone-wrapper {
+/* icone */
+.icone-wrapper {
     position: absolute;
-    left: -2.5em;
+    left: -3.5em;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
@@ -134,30 +116,15 @@ html, body {
     width: 5em;
     height: 5em;
     border-radius: 50%;
-    
-}
- 
- 
-/* class */
- 
-.branco{
-	background-color: #fff;
 }
 
-.vermelho{
-    background-color: #ed3b48;
-}
- 
-.fonteBranco{
-    color: #fff;
-}
- 
-.fonteVermelha{
- 
-    color: #ed3b48;
-}
-/*Alterações de fonte*/
- 
+/* classes de cores */
+.branco{ background-color: #fff; }
+.vermelho{ background-color: #ed3b48; }
+.fonteBranco{ color: #fff; }
+.fonteVermelha{ color: #ed3b48; }
+
+/* Alterações de fonte */
 h1{
     font-family: 'Barlow', sans-serif;
     text-transform: uppercase;
@@ -165,14 +132,14 @@ h1{
     margin:0;
     font-weight: bold;
 }
- 
+
 h2{
     font-family: 'Barlow', sans-serif;
     font-size: 1.4rem;
     margin:0;
     font-weight: normal;
 }
- 
+
 h2 strong{
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
@@ -180,90 +147,46 @@ h2 strong{
     font-variant-caps: all-petite-caps;
     margin:0;  
 }
- 
-p{
-    font-family: 'Open Sans', sans-serif;
-    margin:0;
-}
- 
+
+p{ font-family: 'Open Sans', sans-serif; margin:0; }
+
 mark{
     background-color: #f8f8f8;
     color: #ed3b48;
     font-weight: bold;
-    padding: 2px ;
-    padding-left: 10px;
-    padding-right: 10px;
- 
+    padding: 2px 10px;
 }
- 
+
 .caixatexto h2{
     font-variant-caps: all-petite-caps;
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
 }
- 
 
- 
-.imga{
-    width: .8em;
-}
- 
-a:link {
+.imga{ width: .8em; }
+
+a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: black;
 }
- 
-a:visited {
-     text-decoration: none;
-     color: black;
-}
- 
-a:hover {
-     text-decoration: none;
-     color: black;
-}
- 
-a:active {
-     text-decoration: none;
-     color: black;
-}
- 
- 
- 
- 
-/*Alterações genericas*/
- 
-.flex{
-    display: flex;
-    justify-content: flex-start;
-}
- 
-.paddingtop{
-    padding-top: 2em;
-    padding-bottom: 1em;
-}
- 
+
+/* Alterações genéricas */
+.flex{ display: flex; justify-content: flex-start; }
+.paddingtop{ padding-top: 2em; padding-bottom: 1em; }
 .esq{
     width:20%;
     text-align: right;
     padding-right: 1rem;
     box-sizing: border-box;
 }
- 
-.dir{
-    width:60%;
-}
- 
- 
+.dir{ width:60%; }
+
 .caixatexto:hover{
     box-shadow: 1px 1px 10px 4px rgba(0,0,0,.2 );
 }
- 
- 
- 
-/*OUTROS ELEMENTOS*/
- 
+
+/* Outros elementos */
 #abertura{
   margin: 1em;
   margin-left: 3%;
@@ -272,27 +195,21 @@ a:active {
   background-color: #ed3b48;
   color: #fff;
   border-radius: 6px;
- 
 }
- 
- 
+
 #abertura h1{
   margin-bottom: 2%;
   font-weight:normal;
 }
 
- 
- 
- 
-/*datas*/
- 
+/* Datas */
 .anotexto{
     font-weight: bold;
     font-size: 3em;
+    margin-top: 30px;
 }
- 
-/*bullets*/
- 
+
+/* Bullets */
 .divbullet{
     width: 6%;
     display: flex;
@@ -302,7 +219,7 @@ a:active {
     position: relative;
     z-index: 2;
 }
- 
+
 .bulletano{
     background-color: black;
     height: 15px;
@@ -312,7 +229,7 @@ a:active {
     position: relative;
     z-index: 3;
 }
- 
+
 .bullet{
     background-color: black;
     height: 8px;
@@ -322,89 +239,42 @@ a:active {
     position: relative;
     z-index: 3;
 }
- 
- 
-/*Caixas texto*/
- 
+
+/* ================== CAIXAS DE TEXTO ================== */
 .caixatexto{
     border-radius: 20px;
-    margin: 1%;
+
+    margin: 30px auto;
     padding: 40px;
-    width: 55%;
- 
+
+    width: 680px;
 }
- 
+
 .caixatexto h2{
     font-weight: normal;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
     padding: .6em 0 1em 0;
-    
 }
- 
-.icone{
-    width: 5em;
-    height: 5em;
-    margin-right: 1em;
-}
- 
-body{
-    margin-bottom: 0;
-}
- 
- 
- 
- 
- 
+
+body{ margin-bottom: 0; }
+
+/* ================== MEDIA QUERIES ================== */
 @media screen and (min-width: 1048px) {
-    .dir{
-        width: 610px;
-    }  
+    .dir{ width: 610px; }  
    
-    #timeline::before{
-        left: calc(20% + 3%);
-        width: 4px;
-    }
-   
-    #timeline::after{
-        left: calc(20% + 3% - 9px);
-        width: 18px;
-        height: 18px;
-    }
-   
-    .bulletano{
-        height: 18px;
-        width: 18px;
-    }
-   
-    .bullet{
-        height: 10px;
-        width: 10px;
-    }
-   
-    #abertura p,h1{
-        text-align: left;
-    }
+    #timeline::before{ left: calc(20% + 3%); width: 4px; }
+    #timeline::after{ left: calc(20% + 3% - 9px); width: 18px; height: 18px; }
+    .bulletano{ height: 18px; width: 18px; }
+    .bullet{ height: 10px; width: 10px; }
+    #abertura p,h1{ text-align: left; }
 }
+
 @media screen and (max-width: 600px) {
-    .timeline-container {
-        padding-left: 30px;
-    }
-    .timeline-content {
-        margin-left: 40px;
-    }
-    .timeline::before {
-        left: 15px;
-        width: 3px;
-    }
-    .timeline-bulletano {
-        left: 7px;
-        width: 14px;
-        height: 14px;
-    }
-    .timeline-bullet {
-        left: 11px;
-        width: 7px;
-        height: 7px;
-    }
-}
+    .timeline-container { padding-left: 30px; }
+    .timeline-content { margin-left: 40px; }
+    .timeline::before { left: 15px; width: 3px; }
+    .timeline-bulletano { left: 7px; width: 14px; height: 14px; }
+    .timeline-bullet { left: 11px; width: 7px; height: 7px; }
+    .caixatexto { width: 90%; height: auto; } 
+} 
