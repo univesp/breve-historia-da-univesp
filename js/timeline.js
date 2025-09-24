@@ -69,18 +69,24 @@ class UnivespTimeline {
                 <div class="timeline-event">
                     <div class="timeline-bullet"></div>
                     <div class="timeline-content">
-                        <h2 class="${estilo.corTextoEvento}"><strong>${evento.data}</strong></h2>
-                        <div class="icone-wrapper">
-                            <img src="images/${icone}" class="icone">
+                        <div class="timeline-data">
+                            <h2  class="${estilo.corTextoEvento}"><strong>${evento.data}</strong></h2>
                         </div>
-                        <div class='caixatexto ${estilo.corCaixaTexto}'>
-                            <a href='${evento.link}' target="_blank">
-                                <div class="flex">
-                                    <h2 class="${estilo.corTextoCaixa}">${decreto}<br>
-                                    <strong>${evento.titulo}</strong></h2>
-                                </div>
-                                <p class="${estilo.corTextoCaixa}">${evento.descricao}</p>
-                            </a>
+                        <div class="timeline-evento-container">
+                            <div class="icone-wrapper">
+                                <img src="images/${icone}" class="icone">
+                            </div>
+                            <div class='caixatexto ${estilo.corCaixaTexto}'>
+                                <a href='${evento.link}' target="_blank">
+                                    <div class="flex">
+                                        <div>
+                                            <h2 class="${estilo.corTextoCaixa}">${decreto}<br>
+                                            <strong>${evento.titulo}</strong></h2>
+                                            <p class="${estilo.corTextoCaixa}">${evento.descricao}</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -89,11 +95,11 @@ class UnivespTimeline {
 
         return `
             <div class="${ano}" style="background: ${estilo.background}; width: 100%;">
-                <div class="timeline ${estilo.tipoLinha}">
+                <div class="timeline ${estilo.tipoLinha}" style="padding-bottom: 30px;";>
                     <div class="timeline-ano">
-                        <div class="timeline-bulletano"></div>
+                        <div class="timeline-bulletano" style="margin-top: 30px; margin-bottom: 20px;"></div>
                         <div class="timeline-content">
-                            <h2 class="anotexto ${estilo.corTexto}">${ano}</h2>
+                            <h2 class="anotexto ${estilo.corTexto}" style="margin-top: 30px; margin-bottom: 20px;">${ano}</h2>
                         </div>
                     </div> 
                     ${eventosHTML}
