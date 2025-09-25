@@ -39,31 +39,31 @@
     background: #fff;
 }
 .linha-vermelha .timeline-bulletano {
-    background: #ed3b48;
+    background: #AF1C27;
 }
 .linha-branca .timeline-bullet {
     background: #fff;
 }
 .linha-vermelha .timeline-bullet {
-    background: #ed3b48;
+    background: #AF1C27;
 }
 .linha-branca.timeline::before {
     background: #fff;
 }
 .linha-vermelha.timeline::before {
-    background: #ed3b48;
+    background: #AF1C27;
 }
 #abertura + .timeline::before {
     background: #fff;
 }
 .timeline-ano + .timeline::before,
 .timeline-event + .timeline::before {
-    background: #ed3b48;
+    background: #AF1C27;
 }
 html, body {
     max-width: 100vw;
     overflow-x: hidden;
-	background-color: #ed3b48;
+	background-color: #172833;
     margin: 0;
 }
 
@@ -93,7 +93,7 @@ html, body {
     position: relative;
     width: 100%;
     /* padding-left: 60px; */
-	background-color: #ed3b48;
+	background-color: #AF1C27;
 }
  
 .timeline {
@@ -199,7 +199,7 @@ html, body {
 }
 
 .vermelho{
-    background-color: #ed3b48;
+    background-color: #AF1C27;
 }
  
 .fonteBranco{
@@ -209,7 +209,7 @@ html, body {
  
 .fonteVermelha{
  
-    color: #ed3b48;
+    color: #AF1C27;
     font-size: 16px;
 }
 /*Alterações de fonte*/
@@ -243,15 +243,18 @@ p{
 }
  
 mark{
-    background-color: #f8f8f8;
-    color: #ed3b48;
+    background-color: #AF1C27;
+    color: #FFFFFF;
     font-weight: bold;
     padding: 2px ;
     padding-left: 10px;
     padding-right: 10px;
  
 }
- 
+  .fontePreto{
+color: black;
+
+  }
 .caixatexto h2{
     font-variant-caps: all-petite-caps;
     font-size: 1em;
@@ -325,7 +328,7 @@ a:active {
   margin-left: 3%;
   padding: 1em;
   margin-bottom: 1em;
-  background-color: #ed3b48;
+  background-color: #172833;
   color: #fff;
   border-radius: 6px;
  
@@ -337,7 +340,9 @@ a:active {
   font-weight:normal;
 }
 
- 
+ #abertura{
+    margin-bottom: 0%;
+ }
  
  
 /*datas*/
@@ -418,6 +423,7 @@ body{
         display: flex;
         align-items: flex-start;
         gap: 20px;
+
     }
     
     .timeline-data {
@@ -433,8 +439,12 @@ body{
     
     .caixatexto {
         width: 100%;
-        max-width: 500px;
+        min-width: 750px;
         margin: 20px 0;
+      
+
+
+        
     }
 }
 

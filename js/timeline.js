@@ -43,16 +43,18 @@ class UnivespTimeline {
                 corTexto: 'fonteVermelha',
                 corCaixaTexto: 'vermelho',
                 corTextoEvento: 'fonteVermelha',
-                corTextoCaixa: 'fonteBranco'
+                corTextoCaixa: 'fonteBranco',
+                corCaixaTextop:'fonteBranco'
             };
         } else {
             return {
-                background: '#ed3b48',
+                background: '#172833',
                 tipoLinha: 'linha-branca',
                 corTexto: 'fonteBranco',
                 corCaixaTexto: 'branco',
                 corTextoEvento: 'fonteBranco',
-                corTextoCaixa: 'fonteVermelha'
+                corTextoCaixa: 'fonteVermelha',
+                corCaixaTextop:'fontePreto'
             };
         }
     }
@@ -80,7 +82,7 @@ class UnivespTimeline {
                                         <div>
                                             <h2 class="${estilo.corTextoCaixa}">${decreto}<br>
                                             <strong>${evento.titulo}</strong></h2>
-                                            <p class="${estilo.corTextoCaixa}">${evento.descricao}</p>
+                                            <p class="${estilo.corCaixaTextop}">${evento.descricao}</p>
                                         </div>
                                     </div>
                                 </a>
