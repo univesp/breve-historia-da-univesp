@@ -60,11 +60,9 @@ class UnivespTimeline {
     // Gera HTML para um ano
     gerarHTMLAno(ano, eventos, estilo) {
         let eventosHTML = '';
-        
         eventos.forEach(evento => {
             const decreto = evento.decreto ? evento.decreto : '';
             const icone = evento.icone || '01.svg';
-            
             eventosHTML += `
                 <div class="timeline-event">
                     <div class="timeline-bullet"></div>
@@ -94,15 +92,17 @@ class UnivespTimeline {
         });
 
         return `
-            <div class="${ano}" style="background: ${estilo.background}; width: 100%;">
-                <div class="timeline ${estilo.tipoLinha}" style="padding-bottom: 30px;";>
-                    <div class="timeline-ano">
-                        <div class="timeline-bulletano" style="margin-top: 30px; margin-bottom: 20px;"></div>
-                        <div class="timeline-content">
-                            <h2 class="anotexto ${estilo.corTexto}" style="margin-top: 30px; margin-bottom: 20px;">${ano}</h2>
+            <div class="timeline-year-block" style="background: ${estilo.background}; width: 100vw;">
+                <div class="timeline-year-content">
+                    <div class="timeline ${estilo.tipoLinha}" style="padding-bottom: 30px;">
+                        <div class="timeline-ano">
+                            <div class="timeline-bulletano" style="margin-top: 30px; margin-bottom: 20px;"></div>
+                            <div class="timeline-content">
+                                <h2 class="anotexto ${estilo.corTexto}" style="margin-top: 30px; margin-bottom: 20px;">${ano}</h2>
+                            </div>
                         </div>
-                    </div> 
-                    ${eventosHTML}
+                        ${eventosHTML}
+                    </div>
                 </div>
             </div>
         `;
