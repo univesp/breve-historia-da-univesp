@@ -80,8 +80,10 @@ class UnivespTimeline {
                                 <a href='${evento.link}' target="_blank">
                                     <div class="flex">
                                         <div>
-                                            <h2 class="${estilo.corTextoCaixa}">${decreto}<br>
-                                            <strong>${evento.titulo}</strong></h2>
+                                            <h2 class="${estilo.corTextoCaixa}">
+                                                ${decreto ? `${decreto}<br>` : ''}
+                                                <strong>${evento.titulo}</strong>
+                                            </h2>
                                             <p class="${estilo.corCaixaTextop}">${evento.descricao}</p>
                                         </div>
                                     </div>
