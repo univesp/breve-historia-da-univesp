@@ -38,7 +38,7 @@ class UnivespTimeline {
         
         if (isEven) {
             return {
-                background: '#fff',
+                background: '#F2EBEB',
                 tipoLinha: 'linha-vermelha',
                 corTexto: 'fonteVermelha',
                 corCaixaTexto: 'vermelho',
