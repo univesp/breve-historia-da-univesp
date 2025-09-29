@@ -90,7 +90,6 @@ html, body {
 }
 
 
-
 /* Timeline vertical */
 .timeline-container {
     position: relative;
@@ -246,7 +245,7 @@ p{
     margin:0;
 }
  
-mark{
+.marcarcao{
     background-color: #ED3B48;
     color: #FFFFFF;
     font-weight: bold;
@@ -388,7 +387,9 @@ a:active {
     z-index: 3;
 }
  
- 
+
+
+
 /*Caixas texto*/
  
 .caixatexto{
@@ -419,6 +420,13 @@ a:active {
 body{
     margin-bottom: 0;
 }
+
+
+
+
+
+
+
 
 /* ================== MEDIA QUERIES ================== */
 

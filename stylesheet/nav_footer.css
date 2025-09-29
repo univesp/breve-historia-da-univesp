@@ -1,0 +1,81 @@
+nav > .container {
+  position: static;
+}
+
+nav .logo {
+  position: relative;
+}
+
+/* Botão Pular para Conteúdo Principal */
+
+nav .logo .pularNavegacao {
+    background-color: #AF1C27;
+
+color: #FFFFFF;
+}
+
+/* Caixa do Logotipo */
+
+nav .logo img {
+  background-color: #AF1C27;
+}
+
+/* Botões do Navbar */
+
+nav .nav-link {
+  color: white;
+  background-color: #AF1C27;
+}
+
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .nav-link[aria-expanded="true"] {
+  background-color: #AF1C27;
+  color: white;
+}
+
+nav .dropdown-menu {
+  margin-top: 0;
+  border: 1px solid #AF1C27;
+}
+
+
+/* Rodapé */
+footer {
+  background-color: #AF1C27;
+  color: #FFFFFF;
+}
+
+footer .btn {
+  white-space: nowrap;
+}
+
+
+footer .aval-rea .btn-secondary:hover {
+  background-color: rgba(255,255,255,0.3);
+  /* color: #CE5567; */
+}
+
+footer .aval-rea .btn-secondary {
+    border: 1px solid #FFFFFF;
+}
+
+footer .cred-rea span:not(:last-child) {
+  border-right: 1px solid #FFFFFF;
+}
+
+/* Main */
+
+main {
+  padding-top: 0;
+  padding-bottom: 0 !important;
+  margin-bottom:  0 !important;
+}
+
+@media only screen and (max-width: 991.98px) {
+
+  main {
+    padding-bottom: 2rem;
+  }
+
+}

@@ -5,14 +5,62 @@
     <title>Breve História da Univesp</title>
  
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,700|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet/main.css">
+   
     <script src="js/timeline.js"></script>
     <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.0.css">
+   <link rel="stylesheet" href="stylesheet/main.css">
+  <link rel="stylesheet" href="stylesheet/nav_footer.css">
+
 </head>
  
- 
 <body>
- 
+
+
+
+  <nav> 
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+       
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/traco-negativa.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp em letras maiúsculas, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing" id="share-buttons"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<main>
 <section class="timeline-wrapper">
   <div class="timeline-container">
     <div class="timeline linha-branca">
@@ -23,7 +71,7 @@
       <!-- Fundo vermelho da abertura -->
       <div style="background: #172833; width: 100%;">
         <section id='abertura' class='timeline-content vermelho'>
-          <h1>Breve história da <br> <mark>Univesp</mark></h1>
+          <h1>Breve história da <br> <span class="marcarcao">Univesp<span></h1>
           <p>Conheça a trajetória da Univesp. Aprofunde-se clicando em cada card: os materiais estão disponíveis para leitura na íntegra »</p>
         </section>
       </div>
@@ -31,10 +79,113 @@
     </div>
   </div>
 </section>
- 
- 
- 
- 
- 
+</main>
+
+<!--  FOOTER adicionado -->
+  <footer>
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="cred-rea">
+
+        <!-- Comente em caso de adaptação do REA -->
+        <p>
+          <span>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2019.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</span>
+          <span><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></span>
+          <span><a href="https://github.com/univesp/breve-historia-da-univesp/" target="_blank" aria-label="GitHub">GitHub <i class="fab fa-github"></i></a></span>.
+        <p>
+        <!-- Descomente em caso de adaptação do REA -->
+        <!-- <p>
+          <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+          <span><a href="#">Versão original da Univesp</a></span>
+        </p> -->
+      </div>
+
+      <div class="aval-rea d-flex">
+       <!-- Atualizar "Nome+do+Recurso" -->
+       <a class="btn btn-secondary" href="https://forms.office.com/pages/responsepage.aspx?id=eWAQmRRQ2UGlKPSnPostHslhOptOikFPj8CvLGp68s5UQkJLRVIwUzdVSzZZVlpKNjMwTzM3STFBWCQlQCNjPTEkJUAjdD1n&route=shorturl" target="_blank">Avaliar este recurso</a>
+
+       <!-- Atualizar "Nome+do+Recurso" -->
+       <a class="btn btn-secondary" href="https://forms.office.com/pages/responsepage.aspx?id=eWAQmRRQ2UGlKPSnPostHslhOptOikFPj8CvLGp68s5UREVCQ01UTjI3UUtWSFpFTjFCUVZXNEU4WSQlQCN0PWcu&route=shorturl" target="_blank">Reportar erro</a>
+     </div>
+
+    </div>
+  </footer>
+
+
+    <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Ciência, Tecnologia e Inovação</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Marcos Borges</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Romero Tori</p>
+
+          <h6>Equipe</h6>
+          
+          <p><span class="funcao">Coordenação</span>Wesley de Souza Lima</p>
+          <p><span class="funcao">Roteirização e Design Instrucional</span>Jessica Maria da Silva </p>
+          <p><span class="funcao">Layout</span>Alex fernandes</p>
+          <p><span class="funcao">Programação</span>Kauê Delfino Santos / Marconi sena da silva</p>
+
+
+        </div>
+        <div class="modal-footer">
+          <p>Julho/2025</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  FIM FOOTER -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+  var share = $("#share-buttons");
+  var page_title = $(document).attr('title');
+  var page_url = window.location.href;
+  share.jsSocials({
+    shares: [
+      {
+        share: "facebook",
+        label: "Facebook",
+        logo: "fab fa-facebook-f",
+      },
+      {
+        share: "twitter",
+        label: "Twitter",
+        logo: "fab fa-twitter",
+      },
+      {
+        share: "whatsapp",
+        label: "Whatsapp",
+        logo: "fab fa-whatsapp",
+      },
+    ],
+    url: page_url,
+    text: 'Confira o REA ' + page_title + '.',
+    showLabel: true,
+    showCount: false,
+    shareIn: "popup",
+  });
+  </script>
+
 </body>
 </html>
