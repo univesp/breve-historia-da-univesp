@@ -319,7 +319,18 @@ a:active {
  
  
 .caixatexto:hover{
-    box-shadow: 1px 1px 10px 4px rgba(0,0,0,.2 );
+  
+   box-shadow: 0px 5px 0px -2px rgb(175, 28, 39);
+   background-color: gray;
+   color: #fff !important;
+
+ 
+
+    
+}
+.caixatexto:hover h2,
+.caixatexto:hover p{
+    color: #fff !important;
 }
  
  
@@ -330,11 +341,12 @@ a:active {
   margin: 1em;
   margin-left: 3%;
   padding: 1em;
-  margin-bottom: 1em;
   background-color: #172833;
   color: #fff;
   border-radius: 6px;
- 
+  margin-top:5%;
+  margin-bottom:5%;
+
 }
  
  
@@ -343,9 +355,6 @@ a:active {
   font-weight:normal;
 }
 
- #abertura{
-    margin-bottom: 0%;
- }
  
  
 /*datas*/
@@ -401,6 +410,7 @@ a:active {
     box-sizing: border-box;
     max-height: 300px;
     margin-right: 200px !important;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
  
 .caixatexto h2{
